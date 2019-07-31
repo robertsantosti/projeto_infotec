@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/v4-shims.css"/>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"/>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/v4-shims.js"></script>
+    <link rel="stylesheet" href="_css/style.css"/>
+    <link rel="stylesheet" href="_css/animate.min.css"/>
+    <link rel="stylesheet" href="_css/pe-icon-7-stroke.css"/>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="_js/script.js"></script>
+
+    <title>Home - Quontec</title>
+
+    <style>
+        /*
+        * Globals
+        */
+
+        /* Links */
+        a,
+        a:focus,
+        a:hover {
+        color: #fff;
+        }
+
+        /* Custom default button */
+        .btn-secondary,
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+        color: #333;
+        text-shadow: none; /* Prevent inheritance from `body` */
+        background-color: #fff;
+        border: .05rem solid #fff;
+        }
+
+
+        /*
+        * Base structure
+        */
+
+        html,
+        body {
+        height: 100%;
+       
+        }
+        
+        .bg_home{ /* Início */
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 41.05rem;
+            padding: 5.5rem 0;
+            background: url(_img/bg_quontec.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+        .about-bg{ /* Sobre */
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 41.05rem;
+            padding: 15rem 0;
+            background: url(_img/bg_quontec.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+
+        .bg_equipe{ /* Equipe */
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 41.05rem;
+            padding: 5.5rem 0;
+            background: url(_img/bg_quontec.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+        .feira-bg{ /* Votação Feira */
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 41.05rem;
+            padding: 5rem 0;
+            background: url(_img/bg_quontec.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+        button{ /* Botão */
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 40px;
+            background-color: rgba(90, 90, 90, 1);
+            border: black;
+            border-radius: 17.5px;
+        }
+        .final-bg{ /* Contato */
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 41.05rem;
+            padding: .5rem 0;
+            background: url(_img/bg_quontec.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            
+        }
+        .form-label-group input::-webkit-input-placeholder {
+            color: lightgrey;
+        }
+        
+
+
+        /*
+        * Header
+        */
+        .masthead {
+        margin-bottom: 2rem;
+        }
+
+        .masthead-brand {
+        margin-bottom: 0;
+        }
+
+        .nav-masthead .nav-link {
+        padding: .25rem 0;
+        font-weight: 700;
+        color: rgba(255, 255, 255, .5);
+        background-color: transparent;
+        border-bottom: .25rem solid transparent;
+        }
+
+        .nav-masthead .nav-link:hover,
+        .nav-masthead .nav-link:focus {
+        border-bottom-color: rgba(255, 255, 255, .25);
+        }
+
+        .nav-masthead .nav-link + .nav-link {
+        margin-left: 1rem;
+        }
+
+        .nav-masthead .active {
+        color: #fff;
+        border-bottom-color: #fff;
+        }
+
+        @media (min-width: 48em) {
+        .masthead-brand {
+            float: left;
+        }
+        .nav-masthead {
+            float: right;
+        }
+        }
+
+
+        /*
+        * Cover
+        */
+        .cover {
+        padding: 0 1.5rem;
+        }
+        .cover .btn-lg {
+        padding: .75rem 1.25rem;
+        font-weight: 700;
+        }
+
+
+        /*
+        * Footer
+        */
+        .mastfoot {
+        color: rgba(255, 255, 255, .5);
+        }
+    </style>
+</head>
+<body>
+    <div class="fluid-container">
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-lg fixed-top" id="menu">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="login.php"><i class="fa fa-home"></i></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu_responsivo" aria-controls="menu_responsivo" aria-expanded="false" aria-label="toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="menu_responsivo">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#equipe">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#votacao_feira">Feira</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#votacao">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- INICIO -->
+        <section class="bg_home" id="inicio">
+            <div class="container">
+                <div style="margin-left: 28%;"><img src="_img/logo.png" alt="" width="500"/></div>
+                    
+                    <h1 class="text-white text-center">
+                        SISTEMA DE VOTAÇÃO DINÂMICO
+                    </h1>
+
+                    <p class="text-white text-center">
+                        VII INFOTEC 2018 - Escola Estadual Técnico Industrial Professor Fontes
+                    </p>
+                    
+                    
+            </div>
+        </section>
+        <!-- SOBRE -->
+        <section class="about-bg" id="sobre">
+            <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">Sobre a empresa <i class="fa fa-question-circle"></i></h2>
+                    <p class="text-white-50 text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus eu velit nec accumsan. Fusce consequat lectus libero, non facilisis metus semper eget. Mauris sed metus et nibh auctor bibendum. Pellentesque varius enim non maximus lobortis. Nam pellentesque mattis tempor. Phasellus felis turpis, tincidunt sed quam non, euismod pulvinar lorem. Donec id dui est. Integer sagittis libero nec mauris vulputate, vel laoreet augue auctor. Aenean at laoreet est. Integer ut diam eget quam malesuada vestibulum. Maecenas ut mattis risus.
+                    </p>
+                </div>
+            </div>
+                    
+            </div>
+        </section>
+
+        <!-- EQUIPE QUONTEC -->
+        <div class="bg_equipe" id="equipe">
+            <div class="container">
+                <h1 class="text-white ml-5 mb-5" style="text-shadow: 1px 1px 1px black; font-weight: 400;"><i class="fa fa-users"></i> Equipe QUONTEC</h1> 
+                <div class="row">
+                    <!--Eliden-->
+                    <section class="col-4">
+                        <div style="width: 200px; height: 200px; background: #FF0000; border-radius: 100%; margin: 0 auto;">
+                            <img src="_img/thumb_eliden.png"/>
+                        </div>           
+                        <h2 class="text-white text-center h3 mt-2" style="font-weight: 200;">Eliden Conte</h2>
+                        <p class="text-white text-center mt-2" style="font-weight: 200;">Desenvolvedora - Web Design</p>
+                        <p class="text-center mt-1">
+                            <a href="https://m.faceboo.com/eliden.milena"><button class="btn" style="background:  #3b5998; width: 50px; height: 50px;"><i class="fa fa-facebook"></i></a></button>    
+                            <a href="https:www.linkedin.com/in/elien-conte-814168121/"><button class="btn" style="background: #007bb6; width: 50px; height: 50px;"><i class="fa fa-linkedin"></i></a></button>
+                        </p>
+                    </section>
+                    
+                    <!--Michelle-->
+                    <section class="col-4">
+                        <div style="width: 200px; height: 200px; background: #FF0000; border-radius: 100%; margin: 0 auto;">
+                            <img src="_img/thumb_michelle.png"/>
+                        </div>  
+                        <h2 class="text-white text-center h3 mt-2" style="font-weight: 200;">Michelle Gonçalves</h2>
+                        <p class="text-white text-center mt-2" style="font-weight: 200;">Marketing - Comunicação</p>
+                        <p class="text-center mt-1">
+                            <a href="#"><button class="btn" style="background:  #3b5998; width: 50px; height: 50px;"><i class="fa fa-facebook"></i></a></button>    
+                            <a href="#"><button class="btn" style="background: #007bb6; width: 50px; height: 50px;"><i class="fa fa-linkedin"></i></a></button>
+                        </p>
+                    </section>
+                    <!--Robert-->
+                    <section class="col-4">
+                            <div style="width: 200px; height: 200px; background: #FF0000; border-radius: 100%; margin: 0 auto;">
+                                <img src="_img/thumb_robert.png"/>
+                            </div>         
+                        <h2 class="text-white text-center h3 mt-2" style="font-weight: 200;">Robert Santos</h2>
+                        <p class="text-white text-center mt-2" style="font-weight: 200;">Desenvolvedor - Designer</p>
+                        <p class="text-center mt-1">
+                            <a href="#"><button class="btn" style="background:  #3b5998; width: 50px; height: 50px;"><i class="fa fa-facebook"></i></a></button>    
+                            <a href="#"><button class="btn" style="background: #007bb6; width: 50px; height: 50px;"><i class="fa fa-linkedin"></i></a></button>
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FEIRA -->
+        <section class="feira-bg" id="votacao_feira">
+            <div class="container">
+                <h1 class="text-white mb-5">Votações Feira</h1>
+                <div class="row" style="margin-left:25%;">
+                    <!--Grupos-->
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                        <img class="d-block w-100" src="_img/grupos.jpg" alt="Grupos">      
+                        </div>
+                    </div>
+
+                    <!--Estrelas-->
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                        <img class="d-block w-100" src="_img/estrelas.jpg" alt="Estrelas">                                     
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-left:25%;">
+               
+                    <!--Grupos-->
+                    <div class="col-md-4">
+                        <button><a class="nav-link" href="" > Ir para Votação </a> </button>
+                    </div>
+                
+                    <!--Estrelas-->
+                    <div class="col-md-4">
+                        <button><a class="nav-link" href="" > Ir para Votação </a> </button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- CURSOS -->
+        <section class="feira-bg" id="votacao">
+            <div class="container mx-auto">
+                <h1 class="text-white mb-5">Votações Cursos</h1>
+                <div class="row" style="margin-left:40%;">
+                    <!--Cursos-->
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                        <img class="d-block w-100" src="_img/grupos.jpg" alt="Cursos">      
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-left:40%;">
+                    <!--Cursos-->
+                    <div class="col-md-4">
+                        <button><a class="nav-link" href="" > Ir para Votação </a> </button>
+                    </div>
+                </div>        
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="final-bg" id="contato">
+            <div class="container">
+                
+            <h1 class="text-white text-center" style="font-size: 4em;"><i class="fa fa-envelope-square"></i> Contato</h1>
+        
+            <form class="form-signin" action="mailto:quontecsolucoes@gmail.com?subject=Contato por E-mail" method="POST">
+        
+        
+                <div class="form-label-group">
+                    <input type="nome" id="nome" name="nome" class="form-control" placeholder="Nome Completo" required>
+                </div>
+        
+                <div class="form-label-group">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
+                </div>
+        
+                <div class="form-label-group">
+                    <input type="assunto" id="assunto" name="assunto" class="form-control" placeholder="Assunto" required>
+                </div>
+        
+                <div class="form-label-group">
+                    <textarea name="corpo_email" id="corpo" name="corpo" cols="30" rows="10" class="form-control" placeholder="Digite seu texto aqui" required></textarea>
+                </div>
+        
+                <button class="btn btn-lg btn-dark btn-block" type="submit">Enviar</button>
+        
+            </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
